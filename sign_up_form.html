@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="sign_up_form.css">
+</head>
+<body>
+    <div class="main">
+       <div class="imageContainer">
+       <div class="logo">
+        <div>
+        <img src="./odin_logo.png">
+        <h1 class="logoText">SIGN-UP FORM<h1>
+        </div>
+       </div>
+        <div class = "overlay"> Image by Maëva Vigier on Unsplash</div>
+       </div>
+            
+    
+    <div class="formSection">
+    <div class="heading">
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.<br><br>
+       You <em>know</em> you want to.</p>
+    </div>
+    <form action="" method="post">
+     
+        
+        
+         
+         <div class="inputSection">
+            <h1>Get Started</h1>
+            
+        <label for="firstName">FIRST NAME</label>
+        <input type="text" name="firstName" id="firstName" minlength="1">
+   
+        
+        <label for="lastName">LAST NAME</label>
+        <input type="text" name="lastName" id="lastName" minlength="1">
+    
+        
+        <label for="email">EMAIL</label>
+        <input type="email" name="email" id="email" required pattern="(^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$)">
+    
+        
+        <label for="phone">PHONE NUMBER</label>
+        <input type="tel" name="phone" id="phone" required>
+    
+        
+        <label for="pwd">PASSWORD</label>
+        <input type="password" name="pwd" id="pwd"  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+     
+
+        
+        <label for="Cpwd">CONFIRM PASSWORD</label>
+        <input type="password" name="Cpwd" id="Cpwd" required>
+        
+     </div>
+    
+     
+    <div class="submit-section">
+
+        <button type="submit" class="submit">CREATE ACCOUNT</button>
+
+        <p style="color:rgb(134, 132, 132)">Already have an account?<a style="color:darkcyan"> Log in</a></p>
+   
+    </div>
+     
+    </div>
+    
+    
+    
+    
+    </form>
+<script src="sign_up_form.js"></script>
+</body>
+</html>
